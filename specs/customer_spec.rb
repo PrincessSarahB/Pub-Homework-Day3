@@ -14,7 +14,7 @@ def setup()
   @drink4 = Drink.new("Lemonade", 1.50)
 @drink = [@drink1, @drink2, @drink3, @drink4]
 @customer = Customer.new("Bob", 50.00)
-    @pub = Pub.new("Harkin's bar", 100, @drink)
+    @pub = Pub.new("Harkin's bar", 100.00, @drink)
 
 end
 
@@ -37,6 +37,17 @@ def test_customer_drink_count_is_one()
   @customer.customer_gets_drink(@pub)
 assert_equal(1, @customer.customer_drink_count())
 end
+
+def test_customer_gives_money_to_the_pub()
+  @customer.customer_gives_money_to_the_pub(@drink1)
+assert_equal(45.00, @customer.wallet_contents)
+end
+
+
+
+
+
+
 
 
 end

@@ -15,7 +15,7 @@ class PubTest < MiniTest::Test
     @drink3 = Drink.new("Wine", 4.00 )
     @drink4 = Drink.new("Lemonade", 1.50)
 @drink = [@drink1, @drink2, @drink3, @drink4]
-    @pub = Pub.new("Harkin's bar", 100, @drink)
+    @pub = Pub.new("Harkin's bar", 100.00, @drink)
   end
 
 
@@ -26,7 +26,7 @@ class PubTest < MiniTest::Test
 
 def test_till()
 
-assert_equal(100, @pub.till)
+assert_equal(100.00, @pub.till)
 end
 
 def test_drink_count
