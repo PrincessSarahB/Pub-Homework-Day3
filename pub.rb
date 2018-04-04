@@ -13,20 +13,29 @@ class Pub
   end
 
 
-def till()
+  def till()
 
-return @till
-end
+    return @till
+  end
 
-def drink_count()
-return @drink.count()
-end
+  def drink_count()
+    return @drink.count()
+  end
 
-def sell_drink_to_customer(drink)
-@drink.delete(drink)
-end
+  def sell_drink_to_customer(drink, customer)
+    if check_if_under_age(customer)
+      @drink.delete(drink)
+    end
+  end
 
-def pub_getting_money(drink)
-  @till += drink.drink_price
-end 
+  def pub_getting_money(drink)
+    @till += drink.drink_price
+  end
+
+  def check_if_under_age(customer)
+    age = customer.customer_age
+  return age >= 18
+    
+  end
+
 end

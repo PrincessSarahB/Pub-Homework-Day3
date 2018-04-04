@@ -12,7 +12,7 @@ def setup()
 @drink1 = Drink.new("Vodka", 5.00)
 @drink2 = Drink.new("Beer", 3.00)
 @drink3 = Drink.new("Wine", 4.00 )
-@drink4 = Drink.new("Lemonade", 1.50)
+@drink4 = Drink.new("Whisky", 6.00)
 
 end
 
