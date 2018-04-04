@@ -1,10 +1,10 @@
 class Pub
 
-  def initialize(pub_name , till)
+  def initialize(pub_name , till, drink)
 
     @pub_name = pub_name
     @till = till
-    @drink = []
+    @drink = drink 
 
   end
 
@@ -18,5 +18,8 @@ def till()
 return @till
 end
 
+def drink_count()
+return @drink.count()
+end
 
 end

@@ -22,4 +22,6 @@ def test_wallet_contents()
 
 assert_equal(50.00 , @customer.wallet_contents)
 end
+
+
 end
