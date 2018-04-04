@@ -4,7 +4,7 @@ class Pub
 
     @pub_name = pub_name
     @till = till
-    @drink = drink 
+    @drink = drink
 
   end
 
@@ -21,5 +21,10 @@ end
 def drink_count()
 return @drink.count()
 end
+
+def sell_drink_to_customer(drink)
+@drink.delete(drink)
+end
+
 
 end

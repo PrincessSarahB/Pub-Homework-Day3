@@ -34,10 +34,10 @@ def test_drink_count
 end
 
 
-# def test_pub_sell_drink_to_customer()
-#   @pub.sell_drink_to_customer()
-#   assert_equal(3, @pub.drink_count())
-# end
+def test_pub_sell_drink_to_customer()
+  @pub.sell_drink_to_customer(@drink1)
+  assert_equal(3, @pub.drink_count())
+end
 
 
 
