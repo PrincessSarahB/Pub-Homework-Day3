@@ -12,7 +12,9 @@ end
 
 
 
-
+def drink_price()
+return @price
+end
 
 
 

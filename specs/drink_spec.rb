@@ -24,7 +24,9 @@ assert_equal("Vodka", @drink1.drink_name)
 end
 
 
+def test_drink_price()
 
-
+assert_equal(4.00 , @drink3.drink_price)
+end
 
 end
