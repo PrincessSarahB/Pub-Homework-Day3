@@ -12,4 +12,11 @@ class Pub
     return @pub_name
   end
 
+
+def till()
+
+return @till
+end
+
+
 end

@@ -19,6 +19,10 @@ class PubTest < MiniTest::Test
 
   end
 
+def test_till()
+
+assert_equal(100, @pub.till)
+end
 
 
 end
