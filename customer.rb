@@ -1,10 +1,11 @@
 class Customer
 
-def initialize(customer_name , wallet, age)
+def initialize(customer_name , wallet, age, drunk_level)
 
 @customer_name = customer_name
 @wallet = wallet
 @age = age
+@drunk_level = drunk_level
 @drink = []
 end
 

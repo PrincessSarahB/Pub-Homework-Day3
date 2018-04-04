@@ -8,12 +8,12 @@ require_relative("../customer.rb")
 class CustomerTest < MiniTest::Test
 
 def setup()
-  @drink1 = Drink.new("Vodka", 5.00)
-  @drink2 = Drink.new("Beer", 3.00)
-  @drink3 = Drink.new("Wine", 4.00 )
-  @drink4 = Drink.new("Whisky", 6.00)
+  @drink1 = Drink.new("Vodka", 5.00, 4)
+  @drink2 = Drink.new("Beer", 3.00, 1)
+  @drink3 = Drink.new("Wine", 4.00 , 2)
+  @drink4 = Drink.new("Whisky", 6.00 , 3)
 @drink = [@drink1, @drink2, @drink3, @drink4]
-@customer = Customer.new("Bob", 50.00, 40)
+@customer = Customer.new("Bob", 50.00, 40, 4)
     @pub = Pub.new("Harkin's bar", 100.00, @drink)
 
 end

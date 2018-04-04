@@ -9,12 +9,12 @@ class PubTest < MiniTest::Test
 
   def setup()
 
-    @customer1 = Customer.new("Bob", 50.00, 40)
-    @customer2 = Customer.new("Maria", 20.00, 17)
-    @drink1 = Drink.new("Vodka", 5.00)
-    @drink2 = Drink.new("Beer", 3.00)
-    @drink3 = Drink.new("Wine", 4.00 )
-    @drink4 = Drink.new("Whisky", 6.00)
+    @customer1 = Customer.new("Bob", 50.00, 40, 4)
+    @customer2 = Customer.new("Maria", 20.00, 17, 0)
+    @drink1 = Drink.new("Vodka", 5.00, 4)
+    @drink2 = Drink.new("Beer", 3.00, 1)
+    @drink3 = Drink.new("Wine", 4.00 , 2)
+    @drink4 = Drink.new("Whisky", 6.00 , 3)
     @drink = [@drink1, @drink2, @drink3, @drink4]
     @pub = Pub.new("Harkin's bar", 100.00, @drink)
   end
