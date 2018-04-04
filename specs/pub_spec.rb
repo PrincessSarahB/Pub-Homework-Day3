@@ -7,11 +7,17 @@ require_relative("../customer.rb")
 
 class PubTest < MiniTest::Test
 
-def setup()
+  def setup()
 
-  @pub = Pub.new("Harkin's bar", 100)
+    @pub = Pub.new("Harkin's bar", 100)
+
+  end
 
 
+  def test_pub_name()
+    assert_equal("Harkin's bar" , @pub.pub_name)
+
+  end
 
 
 

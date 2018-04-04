@@ -1,13 +1,15 @@
 class Pub
 
-def initialize(pub_name , till)
+  def initialize(pub_name , till)
 
-@pub_name = pub_name
-@till = till
-@drink = []
+    @pub_name = pub_name
+    @till = till
+    @drink = []
 
-end
+  end
 
-
+  def pub_name()
+    return @pub_name
+  end
 
 end
