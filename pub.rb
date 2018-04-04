@@ -26,5 +26,7 @@ def sell_drink_to_customer(drink)
 @drink.delete(drink)
 end
 
-
+def pub_getting_money(drink)
+  @till += drink.drink_price
+end 
 end
