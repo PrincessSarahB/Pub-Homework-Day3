@@ -13,7 +13,7 @@ def setup()
   @drink3 = Drink.new("Wine", 4.00 )
   @drink4 = Drink.new("Lemonade", 1.50)
 @drink = [@drink1, @drink2, @drink3, @drink4]
-@customer = Customer.new("Bob", 50.00)
+@customer = Customer.new("Bob", 50.00, 40)
     @pub = Pub.new("Harkin's bar", 100.00, @drink)
 
 end
@@ -43,7 +43,9 @@ def test_customer_gives_money_to_the_pub()
 assert_equal(45.00, @customer.wallet_contents)
 end
 
-
+def test_check_customer_age
+assert_equal(40, @customer.customer_age)
+end
 
 
 

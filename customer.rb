@@ -1,9 +1,10 @@
 class Customer
 
-def initialize(customer_name , wallet)
+def initialize(customer_name , wallet, age)
 
 @customer_name = customer_name
 @wallet = wallet
+@age = age
 @drink = []
 end
 
@@ -31,7 +32,9 @@ def customer_gives_money_to_the_pub(drink)
 @wallet -= drink.drink_price
 end
 #if customer has bought drink @wallet -= drink price
-
+def customer_age()
+return @age
+end
 
 
 
