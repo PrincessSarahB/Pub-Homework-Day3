@@ -35,7 +35,6 @@ class Pub
   def check_if_under_age(customer)
     age = customer.customer_age
   return age >= 18
-    
-  end
 
-end
+    end
+  end

@@ -23,8 +23,8 @@ def customer_drink_count()
 return @drink.count
 end
 
-def customer_gets_drink(pub)
-drink = pub.sell_drink_to_customer(@drink1)
+def customer_gets_drink(pub, drink, customer)
+drink = pub.sell_drink_to_customer(drink, customer)
 @drink.push(drink)
 
 end
@@ -37,8 +37,9 @@ def customer_age()
 return @age
 end
 
-
-
+def customer_drunkeness()
+  return @drunk_level
+end
 
 
 end
